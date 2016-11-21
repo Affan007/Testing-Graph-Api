@@ -5,6 +5,7 @@ angular.module('GraphApi')
     .controller('Graph',['$scope','User','$window','$location',function($scope,User,$window,$location){
     $scope.name="fb Login";
         $scope.DataBool=false;
+        $scope.bool=false;
         $scope.FBloginCheck=function(){
             FB.login(function(response) {
                 if (response.authResponse) {
@@ -23,6 +24,9 @@ angular.module('GraphApi')
             FB.logout(function (response) {
                 console.log(response);
                 console.log("logged Out");
+                $scope.bool= true;
+                $scope.DataBool=true;
+                $window.location=('/');
             });
         }
 
@@ -36,9 +40,15 @@ angular.module('GraphApi')
                         $scope.ProfilePic_Large='http://graph.facebook.com/'+$scope.data.id+'/picture?type=large';
                         $scope.Veification
                         console.log(response);
+                        //$scope.$apply($scope.DataBool=true)
                         $scope.DataBool=true;
+                        $scope.bool=true;
                     }
                 );
+
+            $scope.boolG=function(){
+                $scope.DataBool=false;
+            }
             //$window.location.href = '/Data';
 
             //$scope.FeedCtrl =
@@ -60,6 +70,7 @@ angular.module('GraphApi')
         $scope.FBlogin=function(){
             FB.getLoginStatus(function(response) {
                 if (response.status === 'connected') {
+                    $scope.bool=true;
                     $scope.uid = response.authResponse.userID;
                     //var accessToken = response.authResponse.accessToken;
                     console.log($scope.uid);

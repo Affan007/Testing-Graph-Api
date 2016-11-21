@@ -54,7 +54,7 @@ a {
 
 /* line 43, ../scss/header.scss */
 .header .main-nav button {
-  background: #074f66;
+  background: #283248;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -121,22 +121,37 @@ a {
   padding-bottom: 10px !important;
   border-radius: 12px;
   color: #f7f8f9;
+  width: 100%;
+  cursor: hand;
 }
 
-/* line 96, ../scss/header.scss */
-.scrollto:hover {
-  background-color: #3b517d !important;
+/* line 98, ../scss/header.scss */
+.scrollto a {
+  text-decoration: none;
   color: #f7f8f9;
 }
 
-/* line 100, ../scss/header.scss */
+/* line 102, ../scss/header.scss */
+.scrollto a:hover {
+  text-decoration: none;
+  color: #f7f8f9;
+}
+
+/* line 106, ../scss/header.scss */
+.scrollto:hover {
+  background-color: #3b517d !important;
+  color: #f7f8f9;
+  cursor: hand;
+}
+
+/* line 111, ../scss/header.scss */
 .Header-top {
   position: fixed;
   z-index: 100;
 }
 
 @media (min-width: 768px) {
-  /* line 108, ../scss/header.scss */
+  /* line 117, ../scss/header.scss */
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -144,7 +159,7 @@ a {
     box-shadow: none;
   }
 
-  /* line 114, ../scss/header.scss */
+  /* line 123, ../scss/header.scss */
   .navbar-collapse.collapse {
     display: block !important;
     height: auto !important;
@@ -152,13 +167,13 @@ a {
     overflow: visible !important;
   }
 
-  /* line 120, ../scss/header.scss */
+  /* line 129, ../scss/header.scss */
   .navbar-nav > li {
     float: left;
   }
 }
 @media (max-width: 767px) {
-  /* line 127, ../scss/header.scss */
+  /* line 135, ../scss/header.scss */
   .header .main-nav .navbar-collapse {
     padding-left: 15px;
     padding-right: 15px;

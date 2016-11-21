@@ -41,7 +41,7 @@ a {
 }
 
 .header .main-nav button {
-  background: #074f66;
+  background: #283248;
   color: #fff !important;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -92,17 +92,26 @@ a {
   padding-bottom: 10px !important;
   border-radius: 12px;
   color: #f7f8f9;
+  width: 100%;
+  cursor: hand;
+}
+.scrollto a{
+  text-decoration:none;
+  color: #f7f8f9;
+}
+.scrollto a:hover{
+  text-decoration:none;
+  color: #f7f8f9;
 }
 .scrollto:hover{
   background-color:#3b517d !important;
   color: #f7f8f9;
+  cursor: hand;
 }
 .Header-top{
   position: fixed;
   z-index: 100;
 }
-
-
 
 @media (min-width: 768px) {
   .navbar-collapse {
@@ -120,7 +129,6 @@ a {
   .navbar-nav>li {
     float: left;
   }
-
 }
 
 @media (max-width: 767px){
@@ -128,7 +136,4 @@ a {
     padding-left: 15px;
     padding-right: 15px;
   }
-
-
-
 }

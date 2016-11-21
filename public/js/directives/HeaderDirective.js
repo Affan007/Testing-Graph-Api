@@ -2,10 +2,10 @@
  * Created by Affan on 20/11/2016.
  */
 angular.module('GraphApi')
-    .directive('graphHeader', [
-        function($scope ){
+    .directive('graphHeader', ['User','$window',function(User,$window){
 
-            var linker = function(scope, element ) {
+            var linker = function($scope, element,$watch ) {
+
 
 
             }//end of linker
@@ -15,6 +15,7 @@ angular.module('GraphApi')
                 restrict: 'ECMA',
                 replace: true,
                 link: linker,
-                scope: true
+                scope: false
+                //scop:'&'
             }
         }]);

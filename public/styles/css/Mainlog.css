@@ -105,13 +105,6 @@
   padding-top: 15px;
 }
 
-/* line 97, ../scss/Mainlog.scss */
-.coverOuter:hover {
-  box-shadow: 1px 1px #7992c3, 2px 2px #7992c3, 3px 3px #7992c3;
-  -webkit-transform: translateX(-2px);
-  transform: translateX(-2px);
-}
-
 /* line 105, ../scss/Mainlog.scss */
 .VerificationOuter {
   Color: whitesmoke;
@@ -366,4 +359,95 @@
   background-color: #527796;
   color: #f5f5eb;
   text-decoration: none;
+}
+
+/* line 308, ../scss/Mainlog.scss */
+.center {
+  text-align: center;
+}
+
+@media (min-width: 320px) {
+  /* line 313, ../scss/Mainlog.scss */
+  .DataContainer {
+    background-color: #343f55;
+    padding-top: 20px;
+  }
+
+  /* line 317, ../scss/Mainlog.scss */
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 321, ../scss/Mainlog.scss */
+  .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  /* line 325, ../scss/Mainlog.scss */
+  .ProfilePic {
+    width: 70%;
+  }
+
+  /* line 328, ../scss/Mainlog.scss */
+  .normalMargin {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  /* line 332, ../scss/Mainlog.scss */
+  .pull-left {
+    float: left !important;
+    padding-left: 15px;
+  }
+}
+@media (min-width: 480px) {
+  /* line 340, ../scss/Mainlog.scss */
+  .DataContainer {
+    background-color: #343f55;
+    padding-top: 10px;
+  }
+
+  /* line 344, ../scss/Mainlog.scss */
+  .ProfilePic {
+    width: 45%;
+  }
+}
+@media (min-width: 720px) {
+  /* line 350, ../scss/Mainlog.scss */
+  .DataContainer {
+    background-color: #343f55;
+    padding-top: 10px;
+  }
+
+  /* line 354, ../scss/Mainlog.scss */
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 358, ../scss/Mainlog.scss */
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  /* line 362, ../scss/Mainlog.scss */
+  .normalMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 368, ../scss/Mainlog.scss */
+  .ProfilePic {
+    width: 100%;
+  }
+
+  /* line 371, ../scss/Mainlog.scss */
+  .pull-left {
+    float: left !important;
+    padding-left: 0px;
+  }
 }

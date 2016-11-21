@@ -1,8 +1,8 @@
-<div class="header Header-top" >
+<div class="header Header-top">
 <div class="container">
     <h1 class="logo pull-left">
         <a class="" href="#">
-            <span class="logo-title"> GraphApi-Tool</span>
+            <span class="logo-title"ng-click="boolG()"> GraphApi-Tool</span>
         </a>
     </h1><!--//logo-->
     <nav id="main-nav" class="main-nav navbar-right" role="navigation">
@@ -16,8 +16,10 @@
         </div><!--//navbar-header-->
         <div class="navbar-collapse collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <!--<li class="nav-item"><a class="scrollto" href="#about">Home</a></li>-->
-                <li class="nav-item"><a class="scrollto" href="#features">Login</a></li>
+                <span class="verificationStatus">
+                        <li ng-show="bool" class="nav-item scrollto" ng-click="FBLogOut()"><a class="" >LogOut</a></li>
+                        <li ng-hide="bool" class="nav-item scrollto" ng-click="FBlogin()" > <a class="" >Login</a></li>
+                </span>
 
             </ul><!--//nav-->
         </div><!--//navabr-collapse-->

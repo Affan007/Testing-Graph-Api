@@ -11,7 +11,7 @@
     <div class="container-fluid home-container" ng-hide="DataBool">
         <div class=" col-sm-offset-3 col-md-offset-3 col-lg-offset-4 col-sm-6 col-lg-4 col-xs-12 fbLoginButtonOuter">
 
-            <button type="button" class="btn btn-primary active" ng-click="FBlogin()"> Login With Facebook </button>
+            <button type="button" class="btn btn-primary active" ng-click="FBlogin()"> Show me What You Got </button>
 
         </div>
     </div>
@@ -25,10 +25,10 @@
             </div>
             <div class="row row1-Outer">
                 <div class="col-sm-3">
-                <div class="col-sm-12">
+                <div class="col-sm-12 center">
                     <img ng-src= "{{ProfilePic_Large}}" class="ProfilePic" alt="Profile Photo">
                 </div>
-                    <div class="col-sm-12" >
+                    <div class="col-sm-12 center" >
                         <!--<button type="button" class="btn customButton" ng-href="{{data.link}}">Visit me </button>-->
 
                             <a ng-href="{{data.link}}" target="_blank"style="text-decoration:none;"><div class="customButton">Visit me  </div></a>
@@ -37,16 +37,16 @@
                 </div>
                 <div class="col-sm-9">
                     <div class="row">
-                <div class="col-sm-5">
-                    <div class="NameOuter">
+                <div class="col-xs-12 col-md-5">
+                    <div class="NameOuter normalMargin">
                         <div class="Name">
                         {{data.first_name}} {{data.last_name}}
                         </div>
                     </div>
                 </div>
 
-                <div class="col-sm-7">
-                    <div class="VerificationOuter">
+                <div class="col-md-7 col-xs-12">
+                    <div class="VerificationOuter normalMargin">
                         <div class="Verification">
                            Verification Status
                         </div>
@@ -65,11 +65,11 @@
                     </div>
 
                     <div class="row">
-                        <div class="SecureBrowsing-outer">
+                        <div class="SecureBrowsing-outer normalMargin">
                             <div class="Verification">
                                 Secure Browsing Status
                             </div>
-                            <div class="verificationStatus" ng-switch on= data.security_settings.secure_browsing.enabled>
+                            <div class="verificationStatus normalMargin" ng-switch on= data.security_settings.secure_browsing.enabled>
                                 <div ng-switch-when="true">
                                     <img  class="verify-img" src='../img/verified.png'>
                                     <span class="Verified">Secured</span>
@@ -81,14 +81,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="gender-outer gender-label">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="gender-outer gender-label normalMargin">
                             {{data.gender}}
                             </div>
                         </div>
-                        <div class="col-sm-3">
-                            <div class="currencyOuter">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="currencyOuter normalMargin">
                                 <img  class="currency-icon" src='../img/currency.png'>
                                 <div class="currency-label">Currency Using</div>
                                 <div class="data-size">
@@ -98,8 +98,8 @@
 
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="deviceOuter">
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="deviceOuter normalMargin">
                                 <img  class="device-icon" src='../img/device.png'>
                                 <div class="device-label">Primary Device</div>
                                 <div class="data-size">
@@ -108,9 +108,9 @@
                             </div>
                         </div>
 
-                        <div class="col-sm-3">
-                            <div class="timeZoneOuter">
-                                <img  class="timeZone-icon" src='../img/currency.png'>
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="timeZoneOuter normalMargin">
+                                <img  class="timeZone-icon" src='../img/time-zone.png'>
                                 <div class="timeZone-label">Time Zone</div>
                                 <div class="data-size">
                                     {{data.timezone}}
