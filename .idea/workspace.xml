@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="22292b60-3c2c-489a-a0e2-2cec5680bc21" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f07a5f03cc0115691d5695bd9daa0de23e1510b4/Mainlog.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f07a5f03cc0115691d5695bd9daa0de23e1510b4/Mainlog.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/f07a5f03cc0115691d5695bd9daa0de23e1510b4/header.scssc" afterPath="$PROJECT_DIR$/.sass-cache/f07a5f03cc0115691d5695bd9daa0de23e1510b4/header.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/Fb_Auth.html" afterPath="$PROJECT_DIR$/public/views/Fb_Auth.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/controllers/GraphController.js" afterPath="$PROJECT_DIR$/public/js/controllers/GraphController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/directives/Header.html" afterPath="$PROJECT_DIR$/public/js/directives/Header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/directives/HeaderDirective.js" afterPath="$PROJECT_DIR$/public/js/directives/HeaderDirective.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/css/Mainlog.css" afterPath="$PROJECT_DIR$/public/styles/css/Mainlog.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/scss/Mainlog.scss" afterPath="$PROJECT_DIR$/public/styles/scss/Mainlog.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/css/header.css" afterPath="$PROJECT_DIR$/public/styles/css/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/scss/header.scss" afterPath="$PROJECT_DIR$/public/styles/scss/header.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/styles/css/main.css" afterPath="$PROJECT_DIR$/public/styles/css/main.css" />
-    </list>
+    <list default="true" id="22292b60-3c2c-489a-a0e2-2cec5680bc21" name="Default" comment="" />
     <ignored path="SofitProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,8 +57,8 @@
       <file leaf-file-name="Fb_Auth.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/views/Fb_Auth.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-54.26923" vertical-offset="0" max-vertical-offset="2312">
-              <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            <state vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="2312">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -89,11 +77,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/styles/scss/header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.0423863" vertical-offset="0" max-vertical-offset="2448">
+            <state vertical-scroll-proportion="-24.531645" vertical-offset="0" max-vertical-offset="2448">
               <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todo-spec.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/todo-spec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="716">
+              <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -131,6 +139,8 @@
         <option value="$PROJECT_DIR$/public/js/directives/Header.html" />
         <option value="$PROJECT_DIR$/public/styles/scss/Mainlog.scss" />
         <option value="$PROJECT_DIR$/public/styles/scss/header.scss" />
+        <option value="$PROJECT_DIR$/test/conf.js" />
+        <option value="$PROJECT_DIR$/test/todo-spec.js" />
       </list>
     </option>
   </component>
@@ -797,17 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/Fb_Auth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-54.26923" vertical-offset="0" max-vertical-offset="2312">
-          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/directives/HeaderDirective.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.18994413" vertical-offset="0" max-vertical-offset="716">
@@ -840,14 +839,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/styles/scss/Mainlog.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-115.0" vertical-offset="0" max-vertical-offset="6545">
-          <caret line="345" column="3" selection-start-line="345" selection-start-column="3" selection-end-line="345" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.33333334" vertical-offset="0" max-vertical-offset="136">
@@ -856,10 +847,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/styles/scss/header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.0423863" vertical-offset="0" max-vertical-offset="2448">
+        <state vertical-scroll-proportion="-24.531645" vertical-offset="0" max-vertical-offset="2448">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles/scss/Mainlog.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-115.0" vertical-offset="0" max-vertical-offset="6545">
+          <caret line="345" column="3" selection-start-line="345" selection-start-column="3" selection-end-line="345" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/Fb_Auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.076923" vertical-offset="96" max-vertical-offset="2312">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/todo-spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="716">
+          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
           <folding />
         </state>
       </provider>
