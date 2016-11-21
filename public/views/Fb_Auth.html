@@ -1,8 +1,131 @@
 
-<div>
+<!--<div>-->
+    <!--<div class="graph-header"></div>-->
+    <!--Fb Authentic-->
+    <!--h1{{name}}-->
+    <!--<button ng-click="FBlogin()">Facebook Login</button>-->
+    <!--<button ng-click="FBLogOut()">LogOut</button>-->
+<!--</div>-->
+<div class="wrapper">
     <div class="graph-header"></div>
-    Fb Authentic
-    h1{{name}}
-    <button ng-click="FBlogin()">Facebook Login</button>
-    <button ng-click="FBLogOut()">LogOut</button>
+    <div class="container-fluid home-container" ng-hide="DataBool">
+        <div class=" col-sm-offset-3 col-md-offset-3 col-lg-offset-4 col-sm-6 col-lg-4 col-xs-12 fbLoginButtonOuter">
+
+            <button type="button" class="btn btn-primary active" ng-click="FBlogin()"> Login With Facebook </button>
+
+        </div>
+    </div>
+
+    <div class="container-fluid DataContainer" ng-show="DataBool">
+        <div class="container ContainerDetail">
+            <div class="row">
+            <div class="col-xs-12 coverOuter">
+                <img ng-src= "{{data.cover.source}}"  class="Cover" alt="Cover Photo">
+            </div>
+            </div>
+            <div class="row row1-Outer">
+                <div class="col-sm-3">
+                <div class="col-sm-12">
+                    <img ng-src= "{{ProfilePic_Large}}" class="ProfilePic" alt="Profile Photo">
+                </div>
+                    <div class="col-sm-12" >
+                        <!--<button type="button" class="btn customButton" ng-href="{{data.link}}">Visit me </button>-->
+
+                            <a ng-href="{{data.link}}" target="_blank"style="text-decoration:none;"><div class="customButton">Visit me  </div></a>
+
+                    </div>
+                </div>
+                <div class="col-sm-9">
+                    <div class="row">
+                <div class="col-sm-5">
+                    <div class="NameOuter">
+                        <div class="Name">
+                        {{data.first_name}} {{data.last_name}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-7">
+                    <div class="VerificationOuter">
+                        <div class="Verification">
+                           Verification Status
+                        </div>
+                        <div class="verificationStatus" ng-switch on= data.verified  >
+                            <div ng-switch-when="true">
+                        <img  class="verify-img" src='../img/verified.png'>
+                                <span class="Verified">Verified</span>
+                            </div>
+                            <div  ng-switch-default>
+                        <img  class="verify-img"  src='../img/not-verified.png'>
+                                <span class="Verified-n"> Not Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="SecureBrowsing-outer">
+                            <div class="Verification">
+                                Secure Browsing Status
+                            </div>
+                            <div class="verificationStatus" ng-switch on= data.security_settings.secure_browsing.enabled>
+                                <div ng-switch-when="true">
+                                    <img  class="verify-img" src='../img/verified.png'>
+                                    <span class="Verified">Secured</span>
+                                </div>
+                                <div  ng-switch-default>
+                                    <img  class="verify-img"  src='../img/not-verified.png'>
+                                    <span class="Verified-n"> UnSecure</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="gender-outer gender-label">
+                            {{data.gender}}
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="currencyOuter">
+                                <img  class="currency-icon" src='../img/currency.png'>
+                                <div class="currency-label">Currency Using</div>
+                                <div class="data-size">
+                                    {{data.currency.user_currency}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="deviceOuter">
+                                <img  class="device-icon" src='../img/device.png'>
+                                <div class="device-label">Primary Device</div>
+                                <div class="data-size">
+                                    {{data.devices[0].os}}
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-3">
+                            <div class="timeZoneOuter">
+                                <img  class="timeZone-icon" src='../img/currency.png'>
+                                <div class="timeZone-label">Time Zone</div>
+                                <div class="data-size">
+                                    {{data.timezone}}
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
 </div>

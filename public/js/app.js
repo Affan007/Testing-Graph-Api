@@ -10,11 +10,16 @@ angular.
         'ui.bootstrap',
         'ngAnimate',
         'ui.router',
+        'oc.lazyLoad',
         'ui.bootstrap',
         'ngSanitize',
 
     ])
-    .config(['$stateProvider','$urlRouterProvider',function ($stateProvider,$urlRouterProvider) {
+    .config(['$stateProvider','$urlRouterProvider','$locationProvider','$ocLazyLoadProvider',function ($stateProvider,$urlRouterProvider,$locationProvider,$ocLazyLoadProvider) {
+        //$ocLazyLoadProvider.config({
+        //    debug:false,
+        //    events:true,
+        //});
         $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('FBLogin', {
@@ -23,8 +28,37 @@ angular.
                 templateUrl: 'views/Fb_Auth.html',
                 title: 'Graph|Basic',
                 resolve: {
+                    loadMyDirectives:function($ocLazyLoad){
+                        return $ocLazyLoad.load(
+                            {
+
+                                files:[
+                                    //'js/scripts.js'
+                                ]
+                            })
+
+                    }
                 }
             })
+            .state('Data', {
+                url:'/Data',
+                controller: 'GraphData',
+                templateUrl: 'views/Data.html',
+                title: 'Graph|Data',
+                resolve: {
+                    loadMyDirectives:function($ocLazyLoad){
+                        return $ocLazyLoad.load(
+                            {
+
+                                files:[
+                                    //'js/scripts.js'
+                                ]
+                            })
+
+                    }
+                }
+            })
+        $locationProvider.html5Mode(true);
     }]);
 
     window.fbAsyncInit = function() {

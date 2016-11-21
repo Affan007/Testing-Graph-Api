@@ -2,16 +2,18 @@
  * Created by Affan on 20/11/2016.
  */
 angular.module('GraphApi')
-    .controller('Graph',['$scope','User',function($scope,User){
-    $scope.name="fb Login"
+    .controller('Graph',['$scope','User','$window','$location',function($scope,User,$window,$location){
+    $scope.name="fb Login";
+        $scope.DataBool=false;
         $scope.FBloginCheck=function(){
             FB.login(function(response) {
                 if (response.authResponse) {
                     console.log('Welcome!  Fetching your information.... ');
-                    FB.api('/me',{scope:'email,user_likes,public_profile,user_about_me,user_posts,user_relationships',return_scopes: true}, function(response) {
-                        console.log('Good to see you, ' + response.name + '.');
-                        console.log(response);
-                    });
+                    //FB.api('/me',{scope:'email,user_likes,public_profile,user_about_me,user_posts,user_relationships',return_scopes: true}, function(response) {
+                    //    console.log('Good to see you, ' + response.name + '.');
+                    //    console.log(response);
+                    //});
+                    $scope.getData();
                 } else {
                     console.log('User cancelled login or did not fully authorize.');
                 }
@@ -24,6 +26,37 @@ angular.module('GraphApi')
             });
         }
 
+        $scope.getData=function(){
+            $scope.getMyLastNameCtrl =
+                User.getMyLastName($scope.uid)
+                    .then(function (response) {
+                        //callback(response.data);
+                        //User.resolve(response)
+                        $scope.data = response ;
+                        $scope.ProfilePic_Large='http://graph.facebook.com/'+$scope.data.id+'/picture?type=large';
+                        $scope.Veification
+                        console.log(response);
+                        $scope.DataBool=true;
+                    }
+                );
+            //$window.location.href = '/Data';
+
+            //$scope.FeedCtrl =
+            //    User.Feed($scope.uid)
+            //        .then(function (response) {
+            //            //callback(response.data);
+            //            //User.resolve(response)
+            //            $scope.feed = response ;
+            //            console.log(response);
+            //        }
+            //    );
+
+        }
+
+        $scope.visit=function(){
+            $location.url($scope.data.link);
+        };
+
         $scope.FBlogin=function(){
             FB.getLoginStatus(function(response) {
                 if (response.status === 'connected') {
@@ -31,31 +64,16 @@ angular.module('GraphApi')
                     //var accessToken = response.authResponse.accessToken;
                     console.log($scope.uid);
                     console.log(response);
+                    $scope.getData();
 
-                    $scope.getMyLastNameCtrl =
-                        User.getMyLastName($scope.uid)
-                            .then(function (response) {
-                                //callback(response.data);
-                                //User.resolve(response)
-                                $scope.last_name = response.last_name;
-                                console.log(response);
-                            }
-                        );
 
-                    $scope.FeedCtrl =
-                        User.Feed($scope.uid)
-                            .then(function (response) {
-                                //callback(response.data);
-                                //User.resolve(response)
-                                $scope.feed = response ;
-                                console.log(response);
-                            }
-                        );
                 } else if (response.status === 'not_authorized') {
                     $scope.FBloginCheck();
+                    $scope.getData();
                 }
                 else{
                     $scope.FBloginCheck();
+                    $scope.getData();
                 }
             });
         }
